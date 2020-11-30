@@ -1,0 +1,9 @@
+# npm modules
+node_modules
+package-lock.json
+# build folder
+build
+# caching
+.npm
+# css maps
+*.map

@@ -1,0 +1,237 @@
+.right {
+  float: right;
+}
+
+.container {
+  max-width: 960px;
+  width: 90%;
+  margin: 0 auto;
+  vertical-align: center;
+  padding-top: 1rem;
+}
+
+.disabled {
+  color: #bbb;
+}
+
+.text-error {
+  color: #ff4136;
+}
+
+.player-profile {
+  display: flex;
+  align-items: center;
+}
+
+.player-profile>img {
+  width: 64px;
+  height: 64px;
+  margin-right: 0.5em;
+}
+
+.player-profile>div>h4 {
+  padding: 0;
+}
+
+.small {
+  font-size: 0.75em;
+}
+
+.no-pad {
+  padding: 0;
+}
+
+.square-pad {
+  padding: 0em 0.5em;
+}
+
+.share-link {
+  width: auto;
+  display: inline;
+  margin-left: 0.5rem;
+}
+
+.share-link:hover {
+  cursor: pointer;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-inline-flex {
+  display: inline-flex;
+}
+
+.ml-1 {
+  margin-left: 0.5rem;
+}
+
+fieldset:disabled {
+
+  [type=radio]+.checkable,
+  [type=checkbox]+.checkable,
+  label {
+    cursor: default;
+  }
+
+  [type=radio]+.checkable:hover:before,
+  [type=checkbox]+.checkable:hover:before,
+  :focus[type=radio]+.checkable:before,
+  :focus[type=checkbox]+.checkable:before {
+    border-color: #aaa;
+  }
+}
+
+
+.game {
+  width: 95%;
+  margin: 0 auto;
+  padding: 1em 0;
+  height: 100%;
+  display: flex;
+
+  >div {
+    height: 100%;
+
+    >article.card {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .events {
+    min-width: 300px;
+
+    >article.card>section {
+      overflow-y: auto;
+      display: block;
+      height: 100%;
+    }
+
+    .eventcard>section {
+      padding: .6em .8em;
+    }
+
+    .eventcard>section>span {
+      font-weight: 600;
+    }
+  }
+
+  .table {
+    flex-grow: 1;
+    padding-right: 1em;
+
+    .card>section {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      min-height: 0;
+    }
+
+    .split {
+      flex-direction: row;
+      height: 80%;
+      padding: 0 0 0.5em 0;
+      border-bottom: 1px solid #bbb;
+      min-height: 0;
+      display: inline-flex;
+
+      >div {
+        height: 100%;
+      }
+
+      >.sharedHand {
+        flex-grow: 1;
+      }
+    }
+
+    .hand {
+      height: 20%;
+      padding: 0.5em 0.5em 0.5em 0;
+      display: flex;
+
+      .cardImage {
+        height: 90%;
+        margin: 0 0.15em;
+        transition: height 0.1s;
+
+        &.isPlayable:hover {
+          cursor: pointer;
+          height: 100%;
+        }
+      }
+    }
+  }
+
+  .pyramid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+
+    .pyramid-row {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      min-height: 0;
+      padding: 0.15em 0;
+
+      >img {
+        padding: 0 0.15em;
+      }
+    }
+  }
+
+
+  .busfahrer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-wrap: wrap;
+
+    .cardImage {
+      margin: 0.5em;
+      max-height: 202px;
+    }
+  }
+
+  .cardImage {
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+  }
+
+  .cardImage.isPlayable {
+    box-shadow: 0 0 0.4em yellow;
+  }
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.full-height>button {
+  height: 100%;
+  min-height: 0;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.flex-grow {
+  flex-grow: 1;
+}
+
+.flex-row {
+  min-height: 0;
+  height: 100%;
+  flex-direction: row;
+}
+
+.align-center {
+  align-items: center;
+}

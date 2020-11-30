@@ -1,0 +1,39 @@
+{
+  "name": "busfahrer_backend",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "dependencies": {
+    "@types/express": "^4.17.4",
+    "@types/socket.io": "^2.1.4",
+    "@types/uuid": "^7.0.2",
+    "express": "^4.17.1",
+    "socket.io": "^2.3.0",
+    "ts-node-dev": "^1.0.0-pre.44",
+    "typescript": "^3.8.3",
+    "uuid": "^7.0.3"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.28.0",
+    "@typescript-eslint/parser": "^2.28.0",
+    "concurrently": "^5.1.0",
+    "eslint-config-prettier": "^6.10.1",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-prettier": "^3.1.3",
+    "nodemon": "^2.0.3",
+    "prettier": "^2.0.4",
+    "prettier-eslint": "^9.0.1",
+    "ts-loader": "^6.2.2",
+    "typedoc": "^0.17.4"
+  },
+  "scripts": {
+    "build": "tsc",
+    "server": "node build/index.js",
+    "build-watch": "tsc --watch",
+    "server-watch": "nodemon build/index.js",
+    "start": "concurrently --kill-others 'npm run build-watch' 'npm run server-watch'",
+    "lint": "eslint \"./src/**/*.ts\" --fix"
+  },
+  "author": "",
+  "license": "MIT"
+}
